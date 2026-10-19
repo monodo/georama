@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 900" width="840" height="900">
+
+  <!-- ===== CLIENTS (top) ===== -->
+  <rect x="70" y="30" width="700" height="185" rx="10" fill="none" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="420" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2a9d8f">Clients</text>
+
+  <rect x="100" y="80" width="300" height="50" rx="6" fill="none" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="250" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2a9d8f">Geogirafe</text>
+
+  <rect x="440" y="80" width="300" height="50" rx="6" fill="none" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="590" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2a9d8f">QGIS</text>
+
+  <rect x="100" y="145" width="300" height="50" rx="6" fill="none" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="250" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2a9d8f">QField</text>
+
+  <rect x="440" y="145" width="300" height="50" rx="6" fill="none" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="590" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2a9d8f">...</text>
+
+  <!-- ===== GEORAMA CORE (Django app) ===== -->
+  <rect x="70" y="300" width="700" height="230" rx="10" fill="none" stroke="#f4a261" stroke-width="2"/>
+  <text x="420" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#f4a261">Georama</text>
+  <text x="420" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#c8955a">Django web application</text>
+
+  <!-- pygeoapi + OGC API Features (one box) -->
+  <rect x="110" y="395" width="300" height="110" rx="6" fill="none" stroke="#f4a261" stroke-width="1.5"/>
+  <text x="260" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#f4a261">pygeoapi</text>
+  <text x="260" y="472" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#f4a261">OGC API Features</text>
+
+  <!-- Users / permissions / OIDC -->
+  <rect x="430" y="395" width="300" height="110" rx="6" fill="none" stroke="#f4a261" stroke-width="1.5"/>
+  <text x="580" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#f4a261">Users &amp; Permissions, OIDC</text>
+
+  <!-- ===== QSL CLUSTER ===== -->
+  <rect x="70" y="610" width="700" height="150" rx="10" fill="none" stroke="#a0e800" stroke-width="2"/>
+  <text x="420" y="647" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#a0e800">QGIS Server Light</text>
+
+  <rect x="100" y="665" width="195" height="70" rx="6" fill="none" stroke="#a0e800" stroke-width="1.5"/>
+  <text x="197" y="707" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#a0e800">QSL Worker</text>
+
+  <rect x="322" y="665" width="195" height="70" rx="6" fill="none" stroke="#a0e800" stroke-width="1.5"/>
+  <text x="419" y="707" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#a0e800">QSL Redis</text>
+
+  <rect x="544" y="665" width="195" height="70" rx="6" fill="none" stroke="#a0e800" stroke-width="1.5"/>
+  <text x="641" y="707" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#a0e800">QSL Exporter</text>
+
+  <!-- ===== QGIS PROJECT (symbology source) ===== -->
+  <rect x="270" y="815" width="300" height="60" rx="10" fill="none" stroke="#c77dba" stroke-width="2"/>
+  <text x="420" y="853" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#c77dba">QGIS Project</text>
+
+  <!-- ===== ARROWS ===== -->
+  <!-- Clients <-> Georama -->
+  <path d="M420 215 L420 297" fill="none" stroke="#2a9d8f" stroke-width="2.5" marker-start="url(#arrowTealStart)" marker-end="url(#arrowTeal)"/>
+
+  <!-- Georama <-> QSL cluster -->
+  <path d="M420 530 L420 607" fill="none" stroke="#a0e800" stroke-width="2.5" marker-start="url(#arrowGreenStart)" marker-end="url(#arrowGreen)"/>
+
+  <!-- QGIS Project -> QSL (symbology) -->
+  <path d="M420 812 L420 763" fill="none" stroke="#c77dba" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+  <text x="435" y="792" text-anchor="start" font-family="Arial, sans-serif" font-size="15" fill="#9a5a9a">symbology</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowTeal" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#2a9d8f"/>
+    </marker>
+    <marker id="arrowTealStart" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#2a9d8f"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#a0e800"/>
+    </marker>
+    <marker id="arrowGreenStart" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#a0e800"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#c77dba"/>
+    </marker>
+  </defs>
+</svg>

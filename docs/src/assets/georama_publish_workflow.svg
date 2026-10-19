@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820" width="640" height="820">
+
+  <!-- ===== STEP 5 (top): publish maps to Geogirafe ===== -->
+  <rect x="70" y="30" width="500" height="100" rx="10" fill="none" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#2a9d8f">Step 5 · Geogirafe</text>
+  <text x="320" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#2a9d8f">Publish maps</text>
+
+  <!-- ===== STEP 4: publish WMS / OGC APIF ===== -->
+  <rect x="70" y="185" width="500" height="100" rx="10" fill="none" stroke="#FFD000" stroke-width="2"/>
+  <text x="320" y="227" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#FFD000">Step 4 · Georama</text>
+  <text x="320" y="259" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#FFD000">Publish WMS / OGC API Features</text>
+
+  <!-- ===== STEP 3: upload to Georama ===== -->
+  <rect x="70" y="340" width="500" height="100" rx="10" fill="none" stroke="#f4a261" stroke-width="2"/>
+  <text x="320" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#f4a261">Step 3 · Georama</text>
+  <text x="320" y="414" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#f4a261">Upload project</text>
+
+  <!-- ===== STEP 2: create symbology ===== -->
+  <rect x="70" y="495" width="500" height="100" rx="10" fill="none" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="320" y="537" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#2a9d8f">Step 2 · QGIS</text>
+  <text x="320" y="569" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#2a9d8f">Create symbology</text>
+
+  <!-- ===== STEP 1 (bottom): add datasource to QGIS ===== -->
+  <rect x="70" y="650" width="500" height="100" rx="10" fill="none" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="320" y="692" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#2a9d8f">Step 1 · QGIS</text>
+  <text x="320" y="724" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#2a9d8f">Add data source</text>
+
+  <!-- ===== ARROWS (pointing upward, one per 55px gap) ===== -->
+  <path d="M320 650 L320 597" fill="none" stroke="#2a9d8f" stroke-width="2.5" marker-end="url(#arrowTeal)"/>
+  <path d="M320 495 L320 442" fill="none" stroke="#2a9d8f" stroke-width="2.5" marker-end="url(#arrowTeal)"/>
+  <path d="M320 340 L320 287" fill="none" stroke="#f4a261" stroke-width="2.5" marker-end="url(#arrowOrange)"/>
+  <path d="M320 185 L320 132" fill="none" stroke="#FFD000" stroke-width="2.5" marker-end="url(#arrowYellow)"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowTeal" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#2a9d8f"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#f4a261"/>
+    </marker>
+    <marker id="arrowYellow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#FFD000"/>
+    </marker>
+  </defs>
+</svg>
